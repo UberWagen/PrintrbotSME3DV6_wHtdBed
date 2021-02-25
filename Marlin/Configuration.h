@@ -121,7 +121,7 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan & J-Head) (1k pullup)
 
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 1
 #define TEMP_SENSOR_2 1
 #define TEMP_SENSOR_BED 1
@@ -197,7 +197,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 //
 //#define BED_LIMIT_SWITCHING
 
@@ -370,12 +370,12 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
   // with accurate bed leveling, the bed is sampled in a ACCURATE_BED_LEVELING_POINTSxACCURATE_BED_LEVELING_POINTS grid and least squares solution is calculated
   // Note: this feature occupies 10'206 byte
   //#define ACCURATE_BED_LEVELING
-  
+
   #ifdef ACCURATE_BED_LEVELING
      // I wouldn't see a reason to go above 3 (=9 probing points on the bed)
-    #define ACCURATE_BED_LEVELING_POINTS 2
+    #define ACCURATE_BED_LEVELING_POINTS 3
   #endif
-  
+
 #endif
 
 // The position of the homing switches
@@ -396,7 +396,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2020,96}
-#define DEFAULT_MAX_FEEDRATE          {100, 100, 2, 14}    // (mm/sec)    
+#define DEFAULT_MAX_FEEDRATE          {100, 100, 2, 14}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {2000,2000,30,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
