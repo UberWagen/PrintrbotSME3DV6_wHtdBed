@@ -15,4 +15,4 @@ The Printrbot Simple Metal is a great printer, there are just a few things to br
 
 There are quite a bit of firmware changes that are required for some of these modifications to work. I'll be archiving my changes here as I continue building for someone else that would like to upgrade their Printrbot!
 
-I'm compiling my code using Arduino 1.8.11 for simplicity. You'll need to install the Teensyduino add on for the Arduino IDE if you wish to do this. I outline some of these instructions in my blog post on the E3DV6 upgrade.
+I'm compiling my code using Arduino 1.8.11 for simplicity. You'll need to install the Teensyduino add on for the Arduino IDE if you wish to do this. I outline some of these instructions in my blog post on the E3DV6 upgrade. Definitely tune your extruder and bed PIDs on your own, never trust anyone elses!
